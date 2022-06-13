@@ -1,15 +1,10 @@
 name: Hello World
-
 on:
  push:
-   branches:
-     - main
-  
+   branches: [ main ]
 jobs:
   Mi_primer_job:
     runs-on: ubuntu-18.04
     steps:
       - name: mensaje
-      - run: echo "Mi primer action"
-      - name: Fecha maquina virtual
-      - run: date
+      - run: echo Mi primer action
