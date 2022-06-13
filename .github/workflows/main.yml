@@ -1,0 +1,14 @@
+name: Mi primer github action
+
+on:
+  push:
+    branches:
+      main
+      
+jobs:
+  mi_primer_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mensaje
+      - run: echo "Mi primer mensaje"
+  
