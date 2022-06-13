@@ -50,10 +50,10 @@ const createUser = (req = request, res = response) => {
 };
 
 const updateUser = (req = request, res = response) => {
-	const doc = req.params.id;
+	const { id, ...data } = req.body;
 	res.json({
 		msg: 'Usuario actualizado correctamente!',
-		doc,
+		data,
 	});
 };
 
