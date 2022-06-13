@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: mensaje
       - run: echo "Mi primer action"
+      - name: Fecha maquina virtual
+      - run: date
